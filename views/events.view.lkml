@@ -36,13 +36,13 @@ view: events {
     full_suggestions: yes
   }
 
-  dimension: reverse_event_rank {
-    label: "Reverse Event Rank"
-    type: number
-    sql: ${TABLE}.reverse_event_rank ;;
-    description: "Reverse Event Rank in Session. Last Event = Reverse Event Rank 1."
-    full_suggestions: yes
-  }
+  # dimension: reverse_event_rank {
+  #   label: "Reverse Event Rank"
+  #   type: number
+  #   sql: ${TABLE}.reverse_event_rank ;;
+  #   description: "Reverse Event Rank in Session. Last Event = Reverse Event Rank 1."
+  #   full_suggestions: yes
+  # }
 
   # dimension_group: event {
   #   label: "Event"
@@ -510,6 +510,7 @@ view: events {
   dimension: user_properties {
     hidden: yes
     sql: ${TABLE}.user_properties ;;
+    ## This is the parent dimension for the items fields within the event_data_items view.
   }
 
   dimension: user_pseudo_id {
