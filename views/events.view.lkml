@@ -186,7 +186,7 @@ view: events {
 
   dimension: device__browser {
     type: string
-    sql: ${TABLE}.device.browser ;;
+    sql: 'Browser' ;;
     full_suggestions: yes
     group_label: "Device"
     group_item_label: "Browser"
@@ -194,7 +194,7 @@ view: events {
 
   dimension: device__browser_version {
     type: string
-    sql: ${TABLE}.device.browser_version ;;
+    sql: ${TABLE}.device.web_info.browser_version ;;
     full_suggestions: yes
     group_label: "Device"
     group_item_label: "Browser Version"
@@ -305,7 +305,7 @@ view: events {
 
   dimension: device__web_info__hostname {
     type: string
-    sql: ${TABLE}.device.web_info.hostname ;;
+    sql: 'www.googlemerchandisestore.com' ;;
     full_suggestions: yes
     group_label: "Device Web Info"
     group_item_label: "Hostname"
