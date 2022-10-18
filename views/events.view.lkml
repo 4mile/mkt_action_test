@@ -118,8 +118,8 @@ view: events {
 
   dimension: items {
     hidden: yes
-    sql: ${TABLE}.items ;;
-    tags: ["spectacles: ignore"]
+    sql: -- spectacles: ignore
+        ${TABLE}.items ;;
     ## This is the parent dimension for the items fields within the event_data_items view.
   }
 
