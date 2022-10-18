@@ -273,6 +273,7 @@ extends: [event_funnel, page_funnel]
     hidden: yes
     type: string
     sql: ${TABLE}.event_data ;;
+    tags: ["spectacles: ignore"]
     ## This is the parent array that contains the event_data struct elements. It is not directly useably as a dimension.
     ## It is necessary for proper unnesting in the model Join.
   }
@@ -322,6 +323,7 @@ extends: [event_funnel, page_funnel]
     type: string
     sql: ${TABLE}.session_data ;;
     hidden: yes
+    tags: ["spectacles: ignore"]
     ## This is the Parent Struct that contains the session_data elements. It is not directly useably as a dimension.
     ## It is referred to by its child dimensions in their sql definition.
   }
@@ -388,6 +390,7 @@ extends: [event_funnel, page_funnel]
     type: string
     sql: ${TABLE}.session_attribution ;;
     hidden: yes
+    tags: ["spectacles: ignore"]
     ## This is the Parent Struct that contains the session_attribution elements. It is not directly useably as a dimension.
     ## It is referred to by its child dimensions in their sql definition.
   }
@@ -657,6 +660,7 @@ extends: [event_funnel, page_funnel]
     type: string
     sql: ${TABLE}.device_data ;;
     hidden: yes
+    tags: ["spectacles: ignore"]
     ## This is the Parent Struct that contains the device_data elements. It is not directly useably as a dimension.
     ## It is referred to by its child dimensions in their sql definition.
   }
@@ -785,6 +789,7 @@ extends: [event_funnel, page_funnel]
     type: string
     sql: ${TABLE}.geo_data ;;
     hidden: yes
+    tags: ["spectacles: ignore"]
     ## This is the Parent Struct that contains the geo_data elements. It is not directly useably as a dimension.
     ## It is referred to by its child dimensions in their sql definition.
   }
