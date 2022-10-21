@@ -3,3 +3,5 @@ This is a clone of the GA4 Block repo, used for Marketplace Automation Testing. 
 Update File 2
 
 Update File 3
+
+Update File 4
